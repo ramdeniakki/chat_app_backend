@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    /* Project Setup */
+    "rootDir": "./",                      /* Specify the root folder containing your source files. */
+    "outDir": "./dist",                   /* Specify the output folder for all compiled files. */
+    "incremental": true,                  /* Enable incremental compilation for faster builds. */
+    "tsBuildInfoFile": "./.tsbuildinfo",  /* Save incremental compilation info to this file. */
+
+    /* Language Options */
+    "target": "ES6",                      /* Set the JavaScript version to compile to. */
+    "module": "CommonJS",                 /* Specify the module code generation (Node.js-compatible). */
+    "lib": ["ES6", "DOM"],                /* Include library files for ES6 and browser APIs. */
+    "strict": true,                       /* Enable all strict type-checking options. */
+    "esModuleInterop": true,              /* Enable compatibility with CommonJS modules. */
+    "resolveJsonModule": true,            /* Allow importing .json files. */
+
+    /* Type Checking */
+    "skipLibCheck": true,                 /* Skip type checking of declaration files. */
+    "forceConsistentCasingInFileNames": true, /* Ensure consistent casing in imports. */
+
+    /* Emit Options */
+    "declaration": true,                  /* Generate .d.ts files. */
+    "sourceMap": true,                    /* Generate source maps for debugging. */
+    "removeComments": true,               /* Remove comments in compiled files. */
+
+    /* Module Resolution */
+    "moduleResolution": "node",           /* Use Node.js module resolution strategy. */
+    "baseUrl": "./",                      /* Base directory for resolving non-relative imports. */
+    "paths": {                            /* Alias paths for imports (optional). */
+      "@src/*": ["src/*"],
+      "@api/*": ["api/*"]
+    },
+
+    /* Experimental Options */
+    "experimentalDecorators": true,       /* Enable experimental support for decorators. */
+    "emitDecoratorMetadata": true         /* Emit metadata for decorators. */
+  },
+  "include": ["src/**/*", "api/**/*"],    /* Include files for compilation. Adjust as needed. */
+  "exclude": ["node_modules", "dist"],    /* Exclude unnecessary files and directories. */
+  "compileOnSave": false                  /* Disable automatic compilation on save. */
+}
